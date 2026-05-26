@@ -5,15 +5,18 @@ import {
   Bath,
 } from "lucide-react";
 
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../assets/imperial_logo.png";
+
+
 
 const Footer = () => {
   // Social media links aur icons ka array banaya taaki har ek par sahi link kaam kare
   const socialLinks = [
-    { Icon: FaFacebookF, url: "#" }, // Apni Facebook profile ka link '#' ki jagah daal dena
+    { Icon: FaFacebookF, url: "https://www.facebook.com/share/1Ctkc7w4eh/?mibextid=wwXIfr" }, // Apni Facebook profile ka link '#' ki jagah daal dena
     { Icon: FaInstagram, url: "https://www.instagram.com/imperialbathsolution?igsh=ZWE4YXprNGF1YzNu&utm_source=ig_contact_invite" },
-    { Icon: FaLinkedinIn, url: "#" } // Apni LinkedIn profile ka link '#' ki jagah daal dena
+    // { Icon: FaLinkedinIn, url: "#" } // Apni LinkedIn profile ka link '#' ki jagah daal dena
   ];
 
   return (
@@ -24,16 +27,19 @@ const Footer = () => {
         {/* BRAND */}
         <div>
           <Link to="/" className="flex items-center gap-3">
-            {/* <div className="bg-yellow-400 p-3 rounded-full text-black"> */}
-              {/* <Bath size={22} /> */}
-               <img src="/src/assets/imperial_logo.png" alt="Imperial Logo" className="h-20 w-15 object-contain"/>
+            <img
+              src={logo} // Yahan bina quotes ke variable pass hoga
+              alt="Imperial Logo"
+              className="h-[80px] w-[80px] object-contain ml-[-30px]"
+            />
             {/* </div> */}
-            <h1 className="text-2xl font-bold">Imperial</h1>
+            <h1 className="text-2xl md:text-2xl font-display font-extrabold tracking-wide text-[#D4AF37] drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+              Imperial Bath Solutions
+            </h1>
           </Link>
 
           <p className="mt-4 text-sm text-gray-400 leading-6">
-            Premium Jacuzzi bathtubs, spa planning, and luxury bathroom concepts
-            for homes, villas, hotels, and resorts.
+            Premium Jacuzzi bathtubs designed to bring luxury, comfort, and relaxation to your home, villa, hotel, or resort bathroom spaces.
           </p>
 
           {/* SOCIAL */}
@@ -42,7 +48,7 @@ const Footer = () => {
               <a
                 key={i}
                 href={url}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 border border-gray-600 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 cursor-pointer flex items-center justify-center"
               >
@@ -76,29 +82,35 @@ const Footer = () => {
 
         {/* CONTACT */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact</h3>
+          <h3 className="text-lg font-semibold mb-4 text-white">Contact</h3>
 
           <div className="space-y-4 text-gray-400 text-sm">
+
+            {/* Address Section - Icon aligned beautifully */}
             <div className="flex gap-3 items-start">
-              <MapPin size={18} className="text-yellow-400" />
-              <span>
-                Hanuman Tikri, Ward No. 24
-                Shiv Bihar Colony 2
-                Near Greenwich School, Tiwari Chowk
-                Deoghar, Jharkhand – 814112
+              {/* Icon size 22 kiya aur mt-1 se pehli line ke sath align kiya */}
+              <MapPin size={22} className="text-yellow-400 mt-1 shrink-0" />
+              <span className="leading-relaxed">
+                Hanuman Tikri, Ward No. 24<br />
+                Shiv Bihar Colony 2<br />
+                Near Greenwich School, Tiwari Chowk<br />
+                Deoghar, Jharkhand – 814112<br />
                 India
               </span>
             </div>
 
+            {/* Phone Section */}
             <div className="flex gap-3 items-center">
-              <Phone size={18} className="text-yellow-400" />
+              <Phone size={18} className="text-yellow-400 shrink-0" />
               <span>+91 62019 862459</span>
             </div>
 
+            {/* Mail Section */}
             <div className="flex gap-3 items-center">
-              <Mail size={18} className="text-yellow-400" />
-              <span>imperialbathsolution@gmail.com</span>
+              <Mail size={18} className="text-yellow-400 shrink-0" />
+              <span className="break-all">imperialbathsolution@gmail.com</span>
             </div>
+
           </div>
         </div>
       </div>

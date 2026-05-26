@@ -70,11 +70,11 @@ const QuoteModal = ({ isOpen, onClose }) => {
             />
           </label>
           <label>
-            Interest
-            <input name="interest" value={form.interest} onChange={handleChange} />
+            Name of the products
+            <input name="product" value={form.product} onChange={handleChange} />
           </label>
           <label>
-            Message
+            Message/ Your Query
             <textarea
               name="message"
               value={form.message}
