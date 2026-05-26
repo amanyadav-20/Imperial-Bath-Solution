@@ -105,8 +105,8 @@ export const fallbackProducts = [
     },
     {
         _id: "fallback-verona",
-        title: "Verona Whirlpool Bath",
-        slug: "verona-whirlpool-bath",
+        title: "Verona Whirlpool Bathtub",
+        slug: "verona-whirlpool-bathtub",
         category: "jacuzzi",
         shortDescription: "A classic whirlpool bathtub with a polished hotel-suite character.",
         description:
@@ -136,8 +136,8 @@ export const fallbackProducts = [
     },
     {
         _id: "fallback-aria",
-        title: "Aria Compact Spa Bath",
-        slug: "aria-compact-spa-bath",
+        title: "Aria Compact Spa Bathtub",
+        slug: "aria-compact-spa-bathtub",
         category: "spa",
         shortDescription: "A compact spa bathtub for modern apartments and wellness corners.",
         description:
@@ -225,7 +225,7 @@ export const projects = [
             "https://images.unsplash.com/photo-1724873290064-8a78a1d2c30e?auto=format&fit=crop&w=1200&q=80"
     },
     {
-        title: "Heritage Villa Bath",
+        title: "Heritage Villa Bathtub",
         category: "classic",
         image:
             "https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&w=1200&q=80"
@@ -250,7 +250,7 @@ export const fallbackTestimonials = [
         location: "Udaipur",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
         review:
-            "Guests mention the bath suites constantly. The product guidance, drawings, and after-installation support made the project feel very controlled.",
+            "Guests mention the bathtubs constantly. The product guidance, drawings, and after-installation support made the project feel very controlled.",
         rating: 5
     },
     {
@@ -303,7 +303,7 @@ export const team = [
     },
     {
         name: "Naina Kapoor",
-        role: "Luxury Bath Consultant",
+        role: "Luxury Bathtub Consultant",
         image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&q=80"
     },
     {

@@ -9,6 +9,13 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  // Social media links aur icons ka array banaya taaki har ek par sahi link kaam kare
+  const socialLinks = [
+    { Icon: FaFacebookF, url: "#" }, // Apni Facebook profile ka link '#' ki jagah daal dena
+    { Icon: FaInstagram, url: "https://www.instagram.com/imperialbathsolution?igsh=ZWE4YXprNGF1YzNu&utm_source=ig_contact_invite" },
+    { Icon: FaLinkedinIn, url: "#" } // Apni LinkedIn profile ka link '#' ki jagah daal dena
+  ];
+
   return (
     <footer className="bg-[#0f172a] text-white">
 
@@ -17,9 +24,10 @@ const Footer = () => {
         {/* BRAND */}
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <div className="bg-yellow-400 p-3 rounded-full text-black">
-              <Bath size={22} />
-            </div>
+            {/* <div className="bg-yellow-400 p-3 rounded-full text-black"> */}
+              {/* <Bath size={22} /> */}
+               <img src="/src/assets/imperial_logo.png" alt="Imperial Logo" className="h-20 w-15 object-contain"/>
+            {/* </div> */}
             <h1 className="text-2xl font-bold">Imperial</h1>
           </Link>
 
@@ -30,13 +38,16 @@ const Footer = () => {
 
           {/* SOCIAL */}
           <div className="flex gap-4 mt-6">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-              <div
+            {socialLinks.map(({ Icon, url }, i) => (
+              <a
                 key={i}
-                className="p-2 border border-gray-600 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 cursor-pointer"
+                href={url}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 border border-gray-600 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 cursor-pointer flex items-center justify-center"
               >
                 <Icon size={16} />
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -93,7 +104,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-700 text-center py-5 text-sm text-gray-500">
-        © 2026 Imperial Luxury Baths. All rights reserved.
+        © 2026 Imperial Luxury Bathtubs. All rights reserved.
       </div>
     </footer>
   );

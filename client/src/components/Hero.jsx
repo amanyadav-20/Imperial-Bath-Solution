@@ -11,7 +11,7 @@ const Hero = ({ onQuoteClick }) => {
         <span className="eyebrow">Modern wellness spaces</span>
         <h1>Luxury Wellness Redefined</h1>
         <p>
-          Premium bath, spa, sauna, and wellness spaces planned with refined
+          Premium bathtubs, spa, sauna, and wellness spaces planned with refined
           materials and practical project guidance.
         </p>
         <div className="hero__actions">

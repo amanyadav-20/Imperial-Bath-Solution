@@ -53,7 +53,7 @@ const Products = ({ onQuoteClick }) => {
             title="Product Range"
             text="Compare product styles, applications, and planning details before starting an enquiry."
           />
-          <div className="filter-bar">
+          {/* <div className="filter-bar">
             {filters.map((filter) => (
               <button
                 className={activeFilter === filter ? "active" : ""}
@@ -63,7 +63,7 @@ const Products = ({ onQuoteClick }) => {
                 {filter}
               </button>
             ))}
-          </div>
+          </div> */}
           {isLoading ? (
             <LoadingSpinner />
           ) : (

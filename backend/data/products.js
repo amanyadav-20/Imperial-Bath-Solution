@@ -35,10 +35,10 @@ const gallery = {
 
 const products = [
   {
-    title: "Corner Wellness Bath",
-    slug: "corner-wellness-bath",
-    category: "bath",
-    shortDescription: "A compact corner bath built for renovation and space-efficient luxury.",
+    title: "Corner Wellness Bathtub",
+    slug: "corner-wellness-bathtub",
+    category: "bathtub",
+    shortDescription: "A compact corner bathtub built for renovation and space-efficient luxury.",
     description: "Suitable for urban homes and secondary bathrooms, it combines efficient planning with relaxation features.",
     image: starterImage,
     gallery: [starterImage, gallery.nero[0], gallery.aurelia[0]],
@@ -97,8 +97,8 @@ const products = [
     idealFor: ["Resorts", "Farmhouses", "Private terraces"]
   },
   {
-    title: "Verona Whirlpool Bath",
-    slug: "verona-whirlpool-bath",
+    title: "Verona Whirlpool Bathtub",
+    slug: "verona-whirlpool-bathtub",
     category: "jacuzzi",
     shortDescription: "A classic whirlpool bathtub with a polished hotel-suite character.",
     description: "Verona is a refined all-rounder for homeowners who want timeless luxury, reliable hydrotherapy, and a flexible built-in format. It works well with marble walls, warm wood, and gold fixtures.",
@@ -109,7 +109,7 @@ const products = [
     tags: ["Whirlpool", "Classic", "Hotel suite"],
     isFeatured: true,
     features: [
-      { title: "Deep Soak Basin", text: "Generous water depth for a calm, immersive bath." },
+      { title: "Deep Soak Basin", text: "Generous water depth for a calm, immersive bathtubs." },
       { title: "Directional Jets", text: "Adjustable jets help target shoulders, back, and legs." },
       { title: "Quiet Circulation", text: "Engineered to keep the bathroom atmosphere serene." }
     ],
@@ -129,8 +129,8 @@ const products = [
     idealFor: ["Family homes", "Premium rentals", "Hotel suites"]
   },
   {
-    title: "Aria Compact Spa Bath",
-    slug: "aria-compact-spa-bath",
+    title: "Aria Compact Spa Bathtub",
+    slug: "aria-compact-spa-bathtub",
     category: "spa",
     shortDescription: "A compact spa bathtub for modern apartments and wellness corners.",
     description: "Aria is made for smaller spaces that still deserve a luxurious bathing experience. The design keeps proportions compact while offering warm water circulation, an elegant shell, and simple maintenance.",
@@ -138,7 +138,7 @@ const products = [
     gallery: gallery.aria,
     priceLabel: "On request",
     rating: 4.9,
-    tags: ["Compact", "Apartment", "Spa bath"],
+    tags: ["Compact", "Apartment", "Spa bathtub"],
     isFeatured: false,
     features: [
       { title: "Resort Ready", text: "Placeholder for hospitality use cases." },
@@ -158,7 +158,7 @@ const products = [
     ],
     details: [
       "Ideal for apartment bathrooms and secondary suites.",
-      "Optional glass screen planning for bath-shower layouts.",
+      "Optional glass screen planning for bathtub-shower layouts.",
       "Low-maintenance acrylic shell with smooth internal corners."
     ],
     idealFor: ["Apartments", "Compact homes", "Guest bathrooms"]

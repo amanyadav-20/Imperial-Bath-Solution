@@ -14,7 +14,7 @@ const testimonials = [
     location: "Udaipur",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
     review:
-      "Guests mention the bath suites constantly. The product guidance, drawings, and after-installation support made the project feel very controlled.",
+      "Guests mention the bathtubs constantly. The product guidance, drawings, and after-installation support made the project feel very controlled.",
     rating: 5
   },
   {

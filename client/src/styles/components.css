@@ -395,6 +395,49 @@
   background: var(--color-green);
 }
 
+
+/* Container ko center karne aur standard width dene ke liye */
+.container {
+  width: 100%;
+  max-width: 1200px;       /* Yeh layout ko bohot zyada phailne se rokega */
+  margin-left: auto;       /* Left se center karega */
+  margin-right: auto;      /* Right se center karega */
+  padding-left: 24px;      /* Mobile par content screen se chipke na */
+  padding-right: 24px;     /* Mobile par content screen se chipke na */
+  box-sizing: border-box;  /* Padding ko width ke andar hi adjust rakhega */
+}
+
+/* Page Hero section ko thoda sa saas lene ke liye padding */
+.page-hero {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #fbfbf9; /* Ek premium light background (optional, aap change kar sakte hain) */
+}
+
+/* Sections ke beech mein professional gap ke liye */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Eyebrow text (jaise PRODUCT CATALOG) ko thoda premium look dene ke liye */
+.eyebrow {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c5a880; /* Premium gold tint, wellness brands ke liye accha lagta hai */
+  margin-bottom: 12px;
+}
+
+/* Product Card ke grid ko thoda set karne ke liye (agar abhi tak nahi kiya hai) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
 /* ==========================================================================
    FIXED & IMPROVED MODAL STYLES
    ========================================================================== */

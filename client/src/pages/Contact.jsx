@@ -50,24 +50,31 @@ const Contact = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-ink py-24 text-white">
+      {/* <section className="relative overflow-hidden bg-ink py-24 text-white">
         <div className="container">
           <p className="mb-4">Contact Us</p>
           <h1 className="text-5xl font-bold">
             Begin your luxury Jacuzzi consultation
           </h1>
         </div>
-      </section>
+      </section> */}
+
+      <section className="relative overflow-hidden bg-ink py-24 text-white">
+  <div className="container pl-20">
+    <p className="mb-4">
+      Contact Us
+    </p>
+
+    <h1 className="text-5xl font-bold leading-tight">
+      Begin your luxury Jacuzzi consultation
+    </h1>
+  </div>
+</section>
 
       {/* CONTACT SECTION */}
       <section className="bg-ivory py-16">
         <div className="container grid gap-10 lg:grid-cols-2 items-start">
-          
-          {/* LEFT SIDE (हेडिंग और आइकन्स दोनों को राइट में कर दिया है) */}
-          {/* pl-6 md:pl-12 लगाने से यह पूरा हिस्सा राइट में शिफ्ट हो गया है */}
           <div className="max-w-lg pl-6 md:pl-12">
-            
-            {/* हेडिंग अब आइकन्स के बिल्कुल बराबर रहेगी */}
             <h2 className="text-[32px] font-bold mb-8 text-black">
               Share your project details
             </h2>
@@ -137,7 +144,7 @@ const Contact = () => {
               <textarea
                 className="input-field"
                 name="message"
-                placeholder="Your Message"
+                placeholder="Your Enquiry"
                 value={form.message}
                 onChange={handleChange}
                 required

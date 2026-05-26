@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { authApi } from "../api/http";
+import "./Login.css"; // CSS file ko import karna na bhulein
 
 const Login = () => {
   const [mode, setMode] = useState("login");
@@ -41,49 +42,75 @@ const Login = () => {
   };
 
   return (
-    <section className="section auth-page">
+    <section className="auth-page">
       <div className="auth-card">
-        <span className="eyebrow">Account</span>
+        <span className="eyebrow">ACCOUNT</span>
         <h1>{mode === "signup" ? "Create account" : "Login"}</h1>
+        
         <form className="form" onSubmit={handleSubmit}>
           {mode === "signup" && (
-            <label>
-              Name
-              <input name="name" value={form.name} onChange={handleChange} required />
-            </label>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input 
+                id="name"
+                name="name" 
+                type="text"
+                value={form.name} 
+                onChange={handleChange} 
+                placeholder="Enter your name"
+                required 
+              />
+            </div>
           )}
-          <label>
-            Email
+          
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
             <input
+              id="email"
               name="email"
               type="email"
               value={form.email}
               onChange={handleChange}
+              placeholder="Enter your email"
               required
             />
-          </label>
-          <label>
-            Password
+          </div>
+          
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
             <input
+              id="password"
               name="password"
               type="password"
               value={form.password}
               onChange={handleChange}
+              // placeholder="••••••••"
               required
             />
-          </label>
+          </div>
+          
           {error && <p className="form__error">{error}</p>}
           {message && <p className="form__success">{message}</p>}
-          <button className="btn btn--primary btn--full" disabled={isLoading}>
+          
+          <button type="submit" className="btn btn--primary btn--full" disabled={isLoading}>
             {isLoading ? "Please wait..." : mode === "signup" ? "Sign up" : "Login"}
           </button>
         </form>
-        <button
-          className="auth-card__switch"
-          onClick={() => setMode((value) => (value === "login" ? "signup" : "login"))}
-        >
-          {mode === "login" ? "Need an account? Sign up" : "Already have an account? Login"}
-        </button>
+        
+        <p className="auth-card__switch-text">
+          {mode === "login" ? "Need an account? " : "Already have an account? "}
+          <button
+            type="button"
+            className="auth-card__switch-btn"
+            onClick={() => {
+              setMode((value) => (value === "login" ? "signup" : "login"));
+              setError("");
+              setMessage("");
+            }}
+          >
+            {mode === "login" ? "Sign up" : "Login"}
+          </button>
+        </p>
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ export const fallbackProducts = [
     category: "jacuzzi",
     shortDescription: "Premium hydrotherapy bathtub layout for homes and boutique stays.",
     description:
-      "A refined product page for premium bath, wellness, and installation storytelling.",
+      "A refined product page for premium bathtub, wellness, and installation storytelling.",
     image: placeholderImages.jacuzzi,
     priceLabel: "Premium range",
     tags: ["Hydrotherapy", "Indoor", "Luxury homes"],
@@ -125,10 +125,10 @@ export const categories = [
 ];
 
 export const stats = [
-  { value: "20+", label: "Years of experience" },
-  { value: "500+", label: "Projects planned" },
-  { value: "Pan India", label: "Delivery support" },
-  { value: "Custom", label: "Project solutions" }
+  // { value: "20+", label: "Years of experience" },
+  // { value: "500+", label: "Projects planned" },
+  // { value: "Pan India", label: "Delivery support" },
+  // { value: "Custom", label: "Project solutions" }
 ];
 
 export const services = [
